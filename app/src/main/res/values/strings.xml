@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Unsplash test app</string>
+
+    <string name="random_photo_title">Your random photo:</string>
+    <string name="advertisement_title">Здесь могла быть ваша реклама!</string>
+    <string name="advertisement_description">Приложение разработал Ризванов Айдар.</string>
+    <string name="retry">retry</string>
+
+    <string name="image_width">Width:</string>
+    <string name="image_height">Height:</string>
+    <string name="image_description">Description:</string>
+    <string name="image_url">URL:</string>
+
+    <string name="error_401">The access token is invalid</string>
+    <string name="error_402">Error 402</string>
+    <string name="error_403">Rate Limit Exceeded</string>
+    <string name="error_404">Error 404</string>
+
+    <string name="find_collections">Find collections: </string>
+    <string name="find_photo">Find photo: </string>
+
+    <string name="tab_photo">Photo</string>
+    <string name="tab_collection">Collections</string>
+
+    <string name="search_title">Search</string>
+    <string name="search_hint_search_photo">Search photo…</string>
+    <string name="search_hint_search_collection">Search collection…</string>
+
+</resources>

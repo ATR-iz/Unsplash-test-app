@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_photo"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/photoViewFragment"
+        android:name="com.atriztech.unsplashtestapplication.view.FragmentPhotoView"
+        android:label="photo_view_fragment"
+        tools:layout="@layout/fragment_photo_view" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.atriztech.unsplashtestapplication.view.FragmentMain"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_photoViewFragment"
+            app:destination="@id/photoViewFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_listPhotoFragment"
+            app:destination="@id/listPhotoFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentSearch"
+            app:destination="@id/fragmentSearch" />
+    </fragment>
+    <fragment
+        android:id="@+id/listPhotoFragment"
+        android:name="com.atriztech.unsplashtestapplication.view.photolist.FragmentPhotoList"
+        android:label="list_photo_fragment"
+        tools:layout="@layout/fragment_photo_list" >
+        <action
+            android:id="@+id/action_listPhotoFragment_to_photoViewFragment"
+            app:destination="@id/photoViewFragment" />
+        <action
+            android:id="@+id/action_listPhotoFragment_self"
+            app:destination="@id/listPhotoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSearch"
+        android:name="com.atriztech.unsplashtestapplication.view.FragmentSearch"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_fragmentSearch_to_photoViewFragment"
+            app:destination="@id/photoViewFragment" />
+        <action
+            android:id="@+id/action_fragmentSearch_to_listPhotoFragment"
+            app:destination="@id/listPhotoFragment" />
+    </fragment>
+</navigation>

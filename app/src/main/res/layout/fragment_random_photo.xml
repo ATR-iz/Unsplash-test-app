@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.FragmentRandomPhoto">
+
+    <data>
+        <variable
+            name="fragment"
+            type="com.atriztech.unsplashtestapplication.view.FragmentRandomPhoto"
+            />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_update_random_photo"
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/start"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:id="@+id/scoreCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/randomImage1"
+                    android:layout_alignStart="@+id/randomImage1"
+                    android:layout_marginStart="-72dp"
+                    android:layout_marginBottom="58dp"
+                    android:onClick="@{fragment.onClickImageView}"
+                    android:text="@string/random_photo_title"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/colorThemeText"
+                    android:textSize="30dp" />
+
+                <include
+                    android:id="@+id/randomImage1"
+                    layout="@layout/item_random_photo"
+                    android:layout_width="205dp"
+                    android:layout_height="205dp"
+                    android:layout_alignStart="@+id/start"
+                    android:layout_alignBottom="@+id/start"
+                    android:layout_marginStart="-67dp"
+                    android:layout_marginBottom="-69dp"
+                    android:onClick="@{fragment.onClickImageView}"
+                    />
+
+<!--                <com.google.android.material.imageview.ShapeableImageView-->
+<!--                    android:id="@+id/randomImage1"-->
+<!--                    android:layout_width="205dp"-->
+<!--                    android:layout_height="205dp"-->
+<!--                    android:layout_alignStart="@+id/start"-->
+<!--                    android:layout_alignBottom="@+id/start"-->
+<!--                    android:layout_marginStart="-67dp"-->
+<!--                    android:layout_marginBottom="-69dp"-->
+<!--                    android:onClick="@{fragment.onClickImageView}"-->
+<!--                    android:background="@color/colorBackgroundPhoto"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    app:shapeAppearanceOverlay="@style/DiamondCut"-->
+<!--                    tools:src="@tools:sample/backgrounds/scenic" />-->
+
+                <include
+                    android:id="@+id/randomImage14"
+                    layout="@layout/item_random_photo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignStart="@+id/randomImage1"
+                    android:layout_alignBottom="@+id/randomImage1"
+                    android:layout_marginStart="107dp"
+                    android:layout_marginBottom="176dp"
+                    android:onClick="@{fragment.onClickImageView}"
+                    />
+
+                <include
+                    android:id="@+id/randomImage7"
+                    layout="@layout/item_random_photo"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_alignStart="@+id/randomImage1"
+                    android:layout_alignBottom="@+id/randomImage1"
+                    android:layout_marginStart="146dp"
+                    android:layout_marginBottom="128dp"
+                    android:onClick="@{fragment.onClickImageView}"
+                    />
+
+                <include
+                    android:id="@+id/randomImage3"
+                    layout="@layout/item_random_photo"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignEnd="@+id/randomImage1"
+                    android:layout_alignBottom="@+id/randomImage1"
+                    android:layout_marginEnd="151dp"
+                    android:layout_marginBottom="108dp"
+                    android:onClick="@{fragment.onClickImageView}"
+                    />
+
+                <include
+                    android:id="@+id/randomImage10"
+                    layout="@layout/item_random_photo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignEnd="@+id/randomImage1"
+                    android:layout_alignBottom="@+id/randomImage1"
+                    android:layout_marginEnd="108dp"
+                    android:layout_marginBottom="172dp"
+                    android:onClick="@{fragment.onClickImageView}"
+                    />
+
+                <include
+                    android:id="@+id/randomImage8"
+                    layout="@layout/item_random_photo"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_above="@+id/randomImage3"
+                    android:layout_alignEnd="@+id/randomImage1"
+                    android:layout_marginEnd="208dp"
+                    android:layout_marginBottom="-174dp"
+                    android:onClick="@{fragment.onClickImageView}"
+                    />
+
+                <include
+                    android:id="@+id/randomImage5"
+                    layout="@layout/item_random_photo"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignTop="@+id/randomImage1"
+                    android:layout_alignEnd="@+id/randomImage1"
+                    android:layout_marginTop="112dp"
+                    android:layout_marginEnd="146dp"
+                    android:onClick="@{fragment.onClickImageView}"
+                    />
+
+                <include
+                    android:id="@+id/randomImage4"
+                    layout="@layout/item_random_photo"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignStart="@+id/randomImage1"
+                    android:layout_alignTop="@+id/randomImage1"
+                    android:layout_marginStart="84dp"
+                    android:layout_marginTop="169dp"
+                    android:onClick="@{fragment.onClickImageView}"
+                    />
+
+                <include
+                    android:id="@+id/randomImage11"
+                    layout="@layout/item_random_photo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignStart="@+id/randomImage1"
+                    android:layout_alignTop="@+id/randomImage1"
+                    android:layout_marginStart="157dp"
+                    android:layout_marginTop="134dp"
+                    android:onClick="@{fragment.onClickImageView}"
+                    />
+
+                <include
+                    layout="@layout/item_random_photo"
+                    android:id="@+id/randomImage13"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignTop="@+id/randomImage1"
+                    android:layout_alignEnd="@+id/randomImage1"
+                    android:layout_marginTop="175dp"
+                    android:layout_marginEnd="105dp"
+                    android:onClick="@{fragment.onClickImageView}"
+                    />
+
+                <include
+                    layout="@layout/item_random_photo"
+                    android:id="@+id/randomImage2"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignTop="@+id/randomImage1"
+                    android:layout_alignEnd="@+id/randomImage1"
+                    android:layout_marginStart="-51dp"
+                    android:layout_marginTop="211dp"
+                    android:layout_marginEnd="119dp"
+                    android:layout_marginBottom="-419dp"
+                    android:onClick="@{fragment.onClickImageView}"
+                    />
+
+                <include
+                    layout="@layout/item_random_photo"
+                    android:id="@+id/randomImage9"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_above="@+id/randomImage1"
+                    android:layout_alignStart="@+id/randomImage1"
+                    android:layout_marginStart="66dp"
+                    android:layout_marginBottom="-337dp"
+                    android:onClick="@{fragment.onClickImageView}"
+                    />
+
+                <include
+                    layout="@layout/item_random_photo"
+                    android:id="@+id/randomImage6"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_above="@+id/randomImage1"
+                    android:layout_alignStart="@+id/randomImage1"
+                    android:layout_marginStart="149dp"
+                    android:layout_marginBottom="-338dp"
+                    android:onClick="@{fragment.onClickImageView}"
+                    />
+
+                <include
+                    layout="@layout/item_random_photo"
+                    android:id="@+id/randomImage15"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_above="@+id/randomImage1"
+                    android:layout_alignStart="@+id/randomImage1"
+                    android:layout_marginStart="-71dp"
+                    android:layout_marginBottom="-361dp"
+                    android:onClick="@{fragment.onClickImageView}"
+                    />
+
+                <include
+                    layout="@layout/item_random_photo"
+                    android:id="@+id/randomImage12"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_above="@+id/randomImage1"
+                    android:layout_alignStart="@+id/randomImage1"
+                    android:layout_marginStart="-83dp"
+                    android:layout_marginBottom="-276dp"
+                    android:onClick="@{fragment.onClickImageView}"
+                    />
+            </RelativeLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
