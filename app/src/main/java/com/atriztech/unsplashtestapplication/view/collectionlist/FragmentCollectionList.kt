@@ -86,9 +86,7 @@ class FragmentCollectionList : Fragment() {
     private fun initNetworkState(){
         viewModelListCollections.customNetwork.state.observe(this.requireActivity(), {
             when (it) {
-                is CustomNetwork.NetworkState.Loading -> {
-                    //binding.swipeUpdateListCollections.isRefreshing = true
-                }
+                is CustomNetwork.NetworkState.Loading -> {}
                 is CustomNetwork.NetworkState.Loaded -> {
                     binding.swipeUpdateListCollections.isRefreshing = false
                 }

@@ -101,8 +101,6 @@ class FragmentRandomPhoto  : Fragment() {
 
         Picasso.get()
             .load(url)
-//            .placeholder(R.drawable.progress_animation)
-//            .noFade()
             .into(imageView.image, object : EmptyCallback() {
                 override fun onSuccess() {
                     imageView.progress_bar_random_photo.visibility = View.GONE
